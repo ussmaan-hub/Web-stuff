@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <link href="bootstrap/bootstrap.min.css">
+  <link href="hover.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POST</title>
+  <style>
+    .bar{
+      display: flex;
+      box-sizing: border-box;
+      content: icon;
+      margin-left: 0%;
+    } 
+
+
+   body{
+      background-color: #F7F8FA;
+    }
+
+    .bar{
+      background-color: #316DC3;
+      
+    }
+    .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(134, 134, 134);
+  
+}
+.fa:hover{
+  opacity: 0.9;
+  color: aliceblue;
+}
+.tag{
+  text-indent: 220px;
+  color: aliceblue;
+  line-break: normal;
+  max-width:50%;
+  min-width:800px;
+  max-height:500px;
+  min-height:21%;
+  display: center;
+}
+#b1
+{
+  width: fit-content;
+  height: fit-content;
+  
+}
+
+.mleft{
+  position: absolute;
+  margin-top: -18%;
+  z-index: 9;
+  
+ 
+}
+.mright{
+  position: absolute;
+  margin-left: 96.5%;
+  margin-top: -18%;
+  z-index: 9;
+}
+
+.moveSlide {
+    position: relative;
+    left: -100%;
+
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 0s;
+    animation-name: fade;
+    animation: slide 1s fade forwards;
+    animation-delay: 0s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    transition: background-color 0.6s ease;
+}
+
+
+@-webkit-keyframes fade {
+  from{opacity: .4;}
+  to{opacity: 1;}
+    100% { left: 0; }
+}
+
+@keyframes fade {
+  from{opacity: .4;}
+  to{opacity: 1;}
+    100% { background-image: url(./Capture.PNG); left: 0; }
+    100% {background-image: url(./Capture0.PNG); left: 0;}
+}
+
+.bar1{
+  display: flex;
+      box-sizing: border-box;
+      content: icon;
+      background-color:white;
+      height: 55px;
+      width: 100%;
+}
+.icon{
+  display: flex;
+      box-sizing: border-box;
+      content: icon;
+  margin-left: 10%;
+}
+.topBut{
+  display: flex;
+      box-sizing: border-box;
+      color: green;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: smaller;
+   
+}
+.logo{
+margin-left: 10%;
+
+}
+
+.content{
+  position: relative;
+}
+.my-display-left{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+display: none;  
+  background-color:rgba(0, 0, 0, 0.404);
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  color: aliceblue;
+  border-style: none;
+}
+.my-display-left:hover{
+  opacity: 0.7;
+  background-color:rgba(0, 0, 0, 0.9) ;
+  
+}
+.content:hover .my-display-left{
+  display: inline-block;
+}
+
+.my-display-right{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: none;
+  background-color:rgba(0, 0, 0, 0.404);;
+  border-radius: 100px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+
+  }
+  .my-display-right:hover{
+
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.9);}
+  
+.content:hover .my-display-right{
+  display: inline-block;
+}
+.moveSlide{
+
+  display:block ;
+}
+.nav-link{
+
+padding: 2x 2px 2px 2px;
+border-radius: 5px;
+display: flex;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.nav-link:hover{
+  opacity: 1;
+  background-color: #316DC3;
+}
+.navbar navbar-expand-sm navbar-light bg-light{
+  margin-right: 50%;
+}
+.t-container{
+  width: 100%;
+  overflow: hidden;
+}
+.tick-w{
+  width: 100%;
+  padding-left: 100%;
+  background-color: #316DC3;
+}
+@keyframes tick {
+  0% {transform: translate3d(0,0,0);}
+  100%{transform: translate3d(-100%,0,0);}
+}
+.tick-m{
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: tick;
+  animation-duration: 25s;
+}
+.tick-m:hover{
+  animation-play-state: paused;
+}
+.ticker-item{
+  display: inline-block;
+  padding: 0 2rem;
+  align-content: center;
+}
+#date{
+  color: rgb(82, 255, 47);
+}
+#news{
+  color: aliceblue;
+}
+.intro{
+  line-break: normal;
+  display:  block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.para{
+ position: relative;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: medium;
+  font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  right: -100%;
+  animation: slid 0.5s ease-in forwards;
+  animation-delay: 2s;
+  scroll-behavior: smooth;
+}
+@keyframes slid {
+  100%{right: 0px;}
+}
+#counter{
+  background-color:#2755E9;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  width: 100%;
+}
+.rec1{
+  height: 50px;
+  width: 20px;
+  margin: 70px;
+  padding: 20px;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rec2{
+  height: 50px;
+  width: 20px;
+  margin: 70px;
+  padding: 20px;
+  font-size: 30px;
+  margin-right:auto ;
+  margin-left: auto;
+}
+.rec3{
+  height: 50px;
+  width: 20px;
+  margin: 70px;
+  padding: 20px;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rec4{
+  height: 50px;
+  width: 20px;
+  margin: 70px;
+  padding: 20px;
+  font-size: 30px;
+  margin-right:auto;
+  margin-left: auto;
+}
+.counter-value{
+  
+  font-size: 50px;
+  font-style: normal;
+  font-family:  'Times New Roman', Times, serif;
+  color: #F7F8FA;
+}
+.dastrakhan{
+font-size: medium;
+font-weight: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.adoption{
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.medical{
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.education{
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.act{
+  display: flex;
+  box-sizing: border-box;
+  margin:50px;
+  margin-left: 15%;
+  flex-wrap: wrap;
+}
+.proj{
+  display: flex;
+  box-sizing: border-box;
+  margin:50px;
+  margin-left: 15%;
+  flex-wrap: wrap;
+}
+
+.proj1{
+  width:300px;
+  height:70px;
+  display: flex;
+  padding: 4px 4px 4px 4px;
+  background-color: rgb(235, 235, 235);
+  cursor:pointer;
+  background-image: url(./hepatitis.png);
+  background-position-y: 15px;
+  background-position-x: 5px;
+  background-repeat: no-repeat;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 2px #FFF;
+        box-shadow: 0px 0px 2px
+  
+ 
+}
+
+.proj2{
+  width:300px;
+  height:70px;
+  display: flex;
+  padding: 4px 4px 4px 4px;
+  background-color: rgb(235, 235, 235);
+  cursor:pointer;
+  background-image: url(./housing.png);
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 5px;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-left: 5%;
+  -webkit-box-shadow: 0px 0px 2px #FFF;
+        box-shadow: 0px 0px 2px
+  
+ 
+}
+.proj3{
+  width:300px;
+  height:70px;
+  display: flex;
+  padding: 4px 4px 4px 4px;
+  background-color: rgb(235, 235, 235);
+  cursor:pointer;
+  background-image: url(./IT.png);
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 5px;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-top: 2%;
+  -webkit-box-shadow: 0px 0px 2px #FFF;
+        box-shadow: 0px 0px 2px
+  
+ 
+}
+.proj4{
+  width:300px;
+  height:70px;
+  display: flex;
+  padding: 4px 4px 4px 4px;
+  background-color: rgb(235, 235, 235);
+  cursor:pointer;
+  background-image: url(./tharparkar.png);
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 5px;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-top: 2%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0px 0px 2px #FFF;
+        box-shadow: 0px 0px 2px
+  
+ 
+}
+.act1{
+
+  width:300px;
+  height:170px;
+  display: flex;
+  box-shadow: 4px 4px 4px 4px rgb(165, 163, 163); ;
+  padding: 4px 4px 4px 4px;
+  
+  background-color: #FFFFFF;
+  background-image: url(./onlinesadqah.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  background-size: 70px;
+  cursor:pointer;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 5px #FFF;
+        box-shadow: 0px 0px 5px
+  
+}
+
+.act2{
+
+  width:300px;
+  height:170px;
+  display: flex;
+  box-shadow: 4px 4px 4px 4px rgb(165, 163, 163); ;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  background-image: url(./welfare.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  background-size: 70px;
+  cursor:pointer;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-left: 5%; 
+   -webkit-box-shadow: 0px 0px 5px #FFF;
+        box-shadow: 0px 0px 5px
+  
+}
+
+.act3{
+  
+  width:300px;
+  height:170px;
+  display: flex;  
+  box-shadow: 4px 4px 4px 4px rgb(165, 163, 163); ;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  background-image: url(./medical.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  background-size: 70px;
+  cursor:pointer;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-left: 5%;
+  -webkit-box-shadow: 0px 0px 5px #FFF;
+        box-shadow: 0px 0px 5px
+  }
+.act4
+{
+  
+  width:300px;
+  height:170px;
+  display: flex;
+  box-shadow: 4px 4px 4px 4px rgb(165, 163, 163); ;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid;
+  
+  background-color: #FFFFFF;
+  background-image: url(./Dastarkhwan.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  background-size: 70px;
+  cursor:pointer;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-top: 5%;
+  -webkit-box-shadow: 0px 0px 5px #FFF;
+        box-shadow: 0px 0px 5px
+  }
+.act5{
+  
+  width:300px;
+  height:170px;
+  display: flex;  
+  box-shadow: 4px 4px 4px 4px rgb(165, 163, 163); ;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  background-image: url(./ROPLANT.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  background-size: 70px;
+  cursor:pointer;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-top: 5%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0px 0px 5px #FFF;
+        box-shadow: 0px 0px 5px
+  }
+.act6{
+  
+  width:300px;
+  height:170px;
+  display: flex;  
+  box-shadow: 4px 4px 4px 4px rgb(165, 163, 163); ;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid;
+  background-color: #FFFFFF;
+  background-image: url(./education.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  background-size: 70px;
+  cursor:pointer;
+  border-style: hidden ;
+  border-color: white;
+  border-radius: 0px;
+  margin-top: 5%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0px 0px 5px #FFF;
+        box-shadow: 0px 0px 5px
+  }
+.agenda{
+  text-align: end;
+  margin-top: 35%;
+  margin-left: 25%;
+  font-size: large;
+  font-weight: bold;
+  color: #316DC3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.agenda1{
+  
+  text-align: end;
+  margin-top: 35%;
+  margin-left: 35%;
+  font-size: large;
+  font-weight: bold;
+  color: #316DC3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.break{
+  flex-basis: 200%;
+  height: 0;
+
+}
+#head3{
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration:#F7F8FA; 
+  text-decoration-line:underline ;
+  margin-left: 10%;
+  
+}
+#head4{
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration:#F7F8FA; 
+  text-decoration-line:underline ;
+  margin-left: 70%;
+  margin-top: -2%;
+  
+}
+
+#head5{
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration:#F7F8FA; 
+  text-decoration-line:underline ;
+
+}
+u{
+text-decoration: rgb(69, 156, 69);
+text-decoration-line:underline ;
+text-decoration-style: solid;
+}
+
+#hep{
+  margin-left: 20%;
+  margin-top: 7%;
+  font-size: large;
+  font-weight: bold;
+  color: #316DC3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#hou{
+  margin-left: 20%;
+  margin-top: 7%;
+  font-size: large;
+  font-weight: bold;
+  color: #316DC3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#it{
+  margin-left: 20%;
+  margin-top: 7%;
+  font-size: large;
+  font-weight: bold;
+  color: #316DC3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#thar{
+  margin-left: 20%;
+  margin-top: 7%;
+  font-size: large;
+  font-weight: bold;
+  color: #316DC3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.lastpor{
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.upcoming{
+  margin-left: 67%;
+  margin-top:-17%;
+  width:300px;
+  height:250px;
+  background-color: rgb(255, 255, 255);
+}
+
+.p-container{
+  height: 200px;
+  overflow: hidden;
+}
+.tic-w{
+  height: 300px;
+  padding-top: 300px;
+  background-color:#FFFFFF;
+}
+@keyframes ticker {
+  0% {transform: translate3d(0,0,0);}
+  100%{transform: translate3d(0,-100%,0);}
+}
+.tic-m{
+  display: inline-block;
+  white-space: pre-wrap;
+  padding-bottom: 300px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 25s;
+}
+.tic-m:hover{
+  animation-play-state: paused;
+}
+.tick-item{
+  display: inline-block;
+  padding: 0 0rem;
+  align-content: center;
+  
+}
+.contjpg{
+  display: flex;
+  width: 80%;
+  height:80% ;
+}
+.collection{
+width: 100%;
+height: 100%;
+margin-left: 60%;
+padding: 10px 10px 10px 10px;
+}
+
+.coll {
+  position: relative;
+  width: 50%;
+}
+
+.collection{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  margin-left: 60%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.coll:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
+  text-align: center;
+}
+.endbar{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(31, 32, 32);
+  align-content: center;
+}
+.icon2{
+margin-left: 70%;
+color: #316DC3;
+}
+.email::before {
+    content: "📧 ";
+    font-size: medium;
+}
+
+.tel::before {
+    content: "📞 ";
+    font-size: medium;
+}
+.address{
+  margin-left: 10%;
+}
+.copyright{
+  width: 100%;
+  height:20%;
+  background-color: #316DC3;
+  text-indent: 10%;
+}
+.copyid{
+  margin-left: 10%;
+}
+h4{
+  color: #F7F8FA;
+}
+ </style>
+
+
+<body class="body">
+ 
+  <div class="bar">
+    <div class= "icon">
+    <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: black;"></a>
+    <a href="https://twitter.com/" class="fa fa-twitter" style="color: black;"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram" style="color: black;"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube"style="color: black;"></a>
+    <a href="https://www.whatsapp.com/" class="fa fa-whatsapp"style="color: black;"></a>
+  </div>
+   <div class="tag"> <p id="p1">Millions of people's life has changed, millions more awaiting your donation </p></div>
+    <div class=" topBut"><button id="b1"  >UK Donor  </button>
+    <button id="b1">Donate Now</button>
+    <button id="b1">SMIT Results</button>
+  </div>
+</div>
+<div class="bar1" >
+<div class="logo"> <img src="./Saylani-logo.png" alt="" style="height: 100%" style="width:100% ;"  >
+</div>
+<div>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Action 1</a>
+          <a class="dropdown-item" href="#">Action 2</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Saylani Services</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Action 1</a>
+          <a class="dropdown-item" href="#">Action 2</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Future Project</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Action 1</a>
+          <a class="dropdown-item" href="#">Action 2</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Media <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Donation</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">Action 1</a>
+          <a class="dropdown-item" href="#">Action 2</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+    
+  </div>
+</nav>
+</div>
+<div class="content">
+  <img class="moveSlide" src="./Capture0.PNG" style="width:100%">
+  <img class="moveSlide" src="./Capture.PNG" style="width:100%">
+  <img class="moveSlide" src="./Capture1.PNG" style="width:100%">
+  <img class="moveSlide" src="./Capture2.PNG" style="width:100%">
+  <img class="moveSlide" src="./Capture3.PNG" style="width:100%">
+
+<div>
+ <div class="mleft"> <button class="my-display-left"  onclick="plusDivs(-1)">&#10094;</button></div>
+ <div class="mright"> <button class="my-display-right"  onclick="plusDivs(1)">&#10095;</button></div>
+</div>
+</div>
+<div class="t-container"><div class="tick-w"><div class="tick-m">
+  <div class="ticker-item"> <p id="date">(News-1 Dated:05-05-2019)</div>
+    <div class="ticker-item"><p id="news">PIAIC Next Phase Admission in Islamabad And Faisalabad"  <a href="#" style="color: blue;">More details</a></div>
+      <div class="ticker-item"> <p id="date">(News-2 Dated:06-05-2019)</div>
+  <div class="ticker-item"><p id="news">Saylani Welfare Announced "Donation Application"<a href="#" style="color: blue;">More details</a> </div>
+    <div class="ticker-item"> <p id="date">(News-3 Dated:07-05-2019)</div>
+    <div class="ticker-item"><p id="news"> Alhamdulillah Saylani Organized 200+ Locations For Iftar And Sehri In This Holy Month<a href="#" style="color: blue;">More details</a> </div>
+</div></div></div><br><br>
+<div class="introd">
+<img src="./Capture4.PNG" alt="" class="intro">
+</div>
+<div class="para">
+<p style="justify-content: center;" style="font-size: medium;" style="font-style: normal;">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness.</p>
+  <p >We are an organization that believes in lighting up the lives of underprivileged people across the world. We endeavor to provide the best quality services in areas including food, education, medical and social welfare free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day, hundreds more are given the hope of life through medical health care, many are educated to become leaders of tomorrow and several are given the opportunity to stand on their feet financially.</p>
+<p >Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125 branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide branches are operating under the guidance of a team of over 2,000 working professionals who help almost 125,000 people on a daily basis.</p>
+<p > We strongly believe that a little help goes a long way and our work would not be possible without the generous support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting our causes and enabling us to serve the needs of people in need.</p> 
+</div>
+<div id="counter">
+  <div class="rec1">
+    <img src="./Capture5.PNG" alt=""  >
+    <div class="counter-value" data-count="125000">0</div>
+    <div class="dastrakhan" style="color: #F7F8FA;">DAILY DASTRAKHAN <span class="green" style="color: rgb(69, 156, 69);">(Monthly)</span></div>
+  </div>
+  <div class="rec2">
+    <img src="./Capture6.PNG" alt="">
+    <div class="counter-value" data-count="7500">0</div>
+    <div class="adoption" style="color: #F7F8FA;">FAMILY ADOPTION<span class="green" style="color: rgb(69, 156, 69);">(Monthly)</span></div>
+  </div>
+  <div class="rec3">
+    <img src="./Capture7.PNG" alt="">
+    <div class="counter-value" data-count="43749">0</div>
+    <div class="medical" style="color: #F7F8FA;">MEDICAL<span class="green" style="color: rgb(69, 156, 69);">(Monthly)</span></div>
+  </div>
+  <div class="rec4">
+    <img src="./Capture8.PNG" alt="">
+    <div class="counter-value" data-count="180000">0</div>
+    <div class="education" style="color: #F7F8FA;">EDUCATION<span class="green" style="color: rgb(69, 156, 69);">(Monthly)</span></div>
+  </div>
+</div>
+<br><br>
+<center>
+  <img src="./Capture9.PNG" alt="" >
+</center>
+<div class="act">
+<div class="act1"><span class="agenda">ONLINE SADQAH</span> </div>
+<div class="act2"><span class="agenda1">WELFARE</span></div>
+<div class="act3"><span class="agenda1">MEDICAL</span></div>
+<div class="break"></div>
+<div class="act4"><span class="agenda">DASTARKHUWAN</span></div>
+<div class="act5"><span class="agenda1">ROPLANT</span></div>
+<div class="act6"><span class="agenda1" style="margin-left:32%;">EDUCATION</span></div>
+</div>
+<div class= "lastpor">
+  <u ><h3 id="head3" style="color: #316DC3;">MISS</u>ION AND UPCOMING PROJECTS</h3> 
+   <u ><h3 id="head4" style="color: #316DC3;">UPC</u>OMING EVENTS</h3> 
+
+<div class="proj">
+<div class="proj1"><span id="hep">HEPATITIS</span> </div>
+<div class="proj2"><span id="hou">HOUSING SOCIETY</span></div>
+<div class="break"></div>
+<div class="proj3"><span id="it">IT LITERACY</span></div>
+<div class="proj4"><span id="thar">THARPARKAR</span></div>
+
+<div class="upcoming">
+  
+<div class="p-container"><div class="tic-w"><div class="tic-m">
+<br>
+    <div class="tick-item"><p id="news" style="color: rgb(109, 109, 109);">Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan.<a href="#" style="color: blue;">More details</a></div>
+      <div class="tick-item"> <p id="news" style="color: rgb(109, 109, 109);">Entry Test Accouncement (Graphic Designing & Video Editing/Animation Course) On Sunday 3rd March 2019 @ 11:00Am Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad.<a href="#" style="color: blue;">More details</a></div>
+  <div class="tick-item"><p id="news"style="color: rgb(109, 109, 109);">Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training.<a href="#" style="color: blue;">More details</a> </div>
+    <div class="tick-item"> <p id="news"style="color: rgb(109, 109, 109);">PIAIC Entrance Exam Merit Ranking List Announced.<a href="#" style="color: blue;">More details</a></div>
+    <div class="tick-item"><p id="news"style="color: rgb(109, 109, 109);">President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi. <a href="#" style="color: blue;">More details</a> </div>
+      
+</div></div></div> </div>
+</div>
+<br><br>
+<center>
+  <img src="./Capture10.PNG" alt="" >
+</center>
+<br><br> <div class="contjpg">
+  
+<div class="coll"><img class="collection" src="./rashan2.jpg" alt="" srcset=""><div class="overlay"></div></div>
+<div class="coll"> <img class="collection" src="./food.jpg" alt="" srcset=""><div class="overlay"></div></div>
+<div class="coll"> <img class="collection" src="./hazrat.jpg" alt="" srcset=""><div class="overlay"></div></div>
+<div class="coll"> <img class="collection" src="./rashan2.jpg" alt="" srcset=""><div class="overlay"></div></div>
+<div class="coll"> <img class="collection" src="./hazrat2.jpg" alt="" srcset=""><div class="overlay"></div></div>
+          </div>
+</div>
+<br><br>
+<div class="endbar">
+<center>
+  <u ><h3 id="head5"  style="color: #F7F8FA;" >Useful</u> links</h3> 
+</center>
+<h4 style="margin-left: 71%;" >Connect With Us </h4>
+<div class= "icon2">
+  <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #316DC3;"></a>
+  <a href="https://twitter.com/" class="fa fa-twitter" style="color: #316DC3;"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram" style="color: #316DC3;"></a>
+  <a href="https://www.youtube.com/" class="fa fa-youtube" style="color: #316DC3;"></a>
+  <a href="https://www.whatsapp.com/" class="fa fa-whatsapp" style="color: #316DC3;"></a>
+</div>
+<address class="address">
+  <p style="color: rgb(134, 134, 134)">Head Office,</p>
+   <p style="color: rgb(134, 134, 134)"> A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+  <div> <a class="tel" href="111-729-526" style="color: rgb(134, 134, 134)">UAN: 111-729-526</a></div>
+  <div> <a class="tel" href="92-311-1729526"style="color: rgb(134, 134, 134)">CELL: 92-311-1729526</a></div>
+  <div> <a class="tel" href="+1(716)941 7792"style="color: rgb(134, 134, 134)">USA NO +1(716)941 7792</a> </div>
+  <div> <a class="tel" href="(+44)115 970 6256"style="color: rgb(134, 134, 134)">UK NO (+44)115 970 6256</a></div>
+<div>  <a class="email"href="info@saylaniwelfare.com"style="color: rgb(134, 134, 134)">info@saylaniwelfare.com</a><br></div>
+ <div> <a href=""> <i class="fa fa-globe" aria-hidden="true" href="(+0092-213) 4130786-90" ></i>(+0092-213) 4130786-90 </a> </div>   
+</address>
+<div class="copyright" ><span id="copyid" style="color: #F7F8FA;" >Copyright © 2020 Saylani Welfare</span> </div>
+
+</div>
+
+ <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("moveSlide");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 3000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+    </script>
+</body>
+</html>
