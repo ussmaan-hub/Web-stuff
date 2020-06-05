@@ -1,1 +1,431 @@
 
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+
+
+
+                  <!-- include javascript, jQuery FIRST -->
+
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+            <title>EyVilla</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+            <!-- Bootstrap -->
+            <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+       <style>
+           .header{
+               width: 100%;
+               height: 80px;background-image: url(./Gall.jpg);
+               background-size: auto;
+              
+           }
+
+           .space1{
+               
+               width: 100%;
+               height: 100px;
+               background-color: rgb(52, 58,64);
+               background-repeat: no-repeat;
+               position: relative;
+               display: flex;
+           }
+           .navbar
+           { 
+               z-index: 6;
+               margin-top: 0%;
+               width: 100%;
+             
+           }
+           .nav-link{
+
+              padding: 2x 2px 2px 2px;
+              border-radius: 5px;
+              display: flex;
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .nav-link:hover{
+              opacity: 1;
+              background-color: #F7F8FA;
+            }
+           
+           .second{
+            position: relative;
+            display: flex;   
+            margin-top: 2.5%;
+            background-color: rgb(52, 58,64);
+            }
+           .first{
+               z-index: 7;
+            position: relative;
+            margin-left: 30%;
+            display: flex;    
+            margin-top: 2.5%;
+            background-color: rgb(52, 58,64);
+           }
+           #trline{
+               color: aliceblue;
+               margin-left: 25%;
+                position: static;
+                margin-top: 3.2%;
+           }
+           .eyvilla{
+        text-indent: 10%;
+        background-color:black ;
+        width: 50px;
+        height: 100px;
+           }
+
+           .slider{
+               min-height: 800px;
+              max-width: 1457px;
+            position: relative;
+           animation-name: fade;
+           animation: ease-in-out fade 10s infinite;
+            animation-duration: 28s;
+           }
+           .slide{
+            width: 100%;
+            height : 100%;
+           }
+
+@keyframes fade {
+     0%{
+       width: 100%;
+       height: 100%;
+         background-image: url(./s0.jpg);
+         background-size: 100%;
+         background-repeat: no-repeat;
+     }   
+     25%{
+      width: 100%;
+       height: 100%;
+         background-image: url(./s1.jpg); 
+         background-size: 100%;
+         background-repeat: no-repeat;
+     } 
+
+     50%{
+      width: 100%;
+       height: 100%;
+         background-image: url(./s2.jpg);
+         background-size: 100%; 
+         background-repeat: no-repeat;
+     }   
+     75%{
+      width: 100%;
+       height: 100%;
+         background-image: url(./s3.jpg);
+         background-size: 100%; 
+         background-repeat: no-repeat;
+     }   
+     100%{
+      width: 100%;
+       height: 100%;
+         background-image: url(./s4.jpg);         
+         background-size: 100%;
+         background-repeat: no-repeat;
+     }
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#myVideo{
+    position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    position: relative;
+  
+    margin-right: 30%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.leftcat{
+width: 50%;
+height: 50%;
+background-color: antiquewhite;
+left: -100%;
+position: relative;
+animation: forwards leftward 5s ease-in-out;
+}
+@keyframes leftward {
+   100% {left: 40%;}
+}
+.rightcat{
+    width: 50% ;
+height: 50%;
+margin-bottom: 2%;
+
+background-color: antiquewhite;
+position: relative;
+right: -100%;
+  animation:  forwards rightward 5s ease-in-out;
+
+
+}
+@keyframes rightward {
+    100% {right: -5%;}
+}
+
+.endbar{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(31, 32, 32);
+  align-content: center;
+}
+.icon2{
+margin-left: 70%;
+color: #316DC3;
+}
+.email::before {
+    content: "📧 ";
+    font-size: medium;
+}
+
+.tel::before {
+    content: "📞 ";
+    font-size: medium;
+}
+.address{
+  margin-left: 10%;
+}
+.copyright{
+  width: 100%;
+  height:20%;
+  background-color: black;
+  text-indent: 10%;
+}
+.copyid{
+  margin-left: 10%;
+}
+.tagline{
+  text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    position: fixed;
+
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+
+}
+.design{
+  width: 100%;
+  height: 25px;
+  background-color: white;
+}
+.p2{
+  width: 100%;
+  height: 100%;
+  background-image: url("p2.webp");
+
+  height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p3{
+  
+  background-image: url("p3.jpg");
+
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+margin-bottom: 3%;
+
+  
+}
+       </style> 
+
+        </head>
+        <body>
+            <div class="header"> 
+                <img src="./icon1.png" alt="" srcset="" style="width: 100px;" style="height: 100px;"  >         
+            </div> 
+<div class="space1">
+    <div class="eyvilla" style="color: aliceblue;"> <h1 style="font-size: 65px;" style="font-family:monospace ;" style="font-weight: bold;"  >EYVI<span style="color: yellow;">LLA</span></h1>
+  </div>
+      <div id="trline"> <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">FREE SHIPPING ON US ORDERS OVER 50$</span>  </div>
+      <div class="first" >
+      <div class="btn-group">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="background-color: rgb(52, 58,64)">
+        <span style="color: aliceblue;" style="font-family: 'Times New Roman', Times, serif;"><span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">My Account</span>    </span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="triggerId">
+       <ul> <li> <a class="dropdown-item" href="#">LOGIN</a></li>
+        <li> <a class="dropdown-item" href="#">SIGN UP</a></li>
+    </ul>
+    </div>
+</div>
+</div>
+<div class="second">
+<div class="btn-group"  >
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="background-color: rgb(52, 58,64)">
+        <span style="color: aliceblue;" style="font-family: 'Times New Roman', Times, serif;">  <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Language</span>  </span>
+    </button> 
+    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="triggerId">
+       <ul> <li> <a class="dropdown-item" href="#">English</a></li>
+        <li> <a class="dropdown-item" href="#">Urdu</a></li>
+    </ul>
+    </div>
+    
+</div>
+</div>
+
+</div>
+
+<div class="design">
+
+</div>
+<div class="nav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-style: italic;" style="font-weight: bolder;">CLOTHING STORE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html"> <span style="color: darkgoldenrod;">Home</span> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="./fragnance.html"> <span style="color: darkgoldenrod;">Fragnances</span></a>        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <span style="color: darkgoldenrod;"> Clothing</span>     
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./women.html">  <span style="color: darkgoldenrod;">Women</span></a>
+            <a class="dropdown-item" href="./men.html"> <span style="color: darkgoldenrod;">Men</span></a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  </div>
+    <center>
+            <div class="slide" >
+            <div class="slider">
+    
+            </div>
+        </div>
+            <div class="intro">
+                <p>
+                   <h1 id="head1" style="font-weight: bold;">Welcome to EYVILLA</h1> 
+    Our products are inspired by the people and world around us. Beautiful, high quality goods that are designed especially for you. Discover our story and meet the people that make our brand what it is
+    ,it make you feel comfortable and you can't live without admiring it.
+                </p>
+    
+            
+                
+        </div>
+        </center>
+    
+       
+
+        <div class="p2"></div>
+                    
+<div>
+
+  <div class="leftcat" data-aos="fade-left">
+    <a href="">  <img src="newarrival.gif" alt="" srcset="" class="inline-photo show-on-scroll" height="100%" width="100%"></a>
+  </div>
+  <br>
+  <div class="rightcat" data-aos="fade-right">
+    <a href="">  <img src="limited.webp" alt="" srcset="" class="inline-photo show-on-scroll" height="100%" width="100%"></a>
+
+  </div>
+
+
+
+</div>
+<div class="p3"></div>
+  
+   
+            <div class="video">
+              <div class="tagline" > 
+                <p style="color: white;">
+             EYVILLA STORE     
+                 </p>
+             </div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="./vm.mp4" >
+                    Your browser does not support HTML5 video.
+                  
+                  
+                  </video>
+            </div>
+            <br><br>
+            <div class="endbar">
+            <center>
+              <u ><h3 id="head5"  style="color: #F7F8FA;" >Useful</u> links</h3> 
+            </center>
+            <h4 style="margin-left: 71%;" >Connect With Us </h4>
+            <div class= "icon2">
+              <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #316DC3;"></a>
+              <a href="https://twitter.com/" class="fa fa-twitter" style="color: #316DC3;"></a>
+              <a href="https://www.instagram.com/" class="fa fa-instagram" style="color: #316DC3;"></a>
+              <a href="https://www.youtube.com/" class="fa fa-youtube" style="color: #316DC3;"></a>
+              <a href="https://www.whatsapp.com/" class="fa fa-whatsapp" style="color: #316DC3;"></a>
+            </div>
+            <address class="address">
+              <p style="color: rgb(134, 134, 134)">Head Office,</p>
+               <p style="color: rgb(134, 134, 134)"> A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+              <div> <a class="tel" href="111-729-526" style="color: rgb(134, 134, 134)">UAN: 111-729-526</a></div>
+              <div> <a class="tel" href="92-311-1729526"style="color: rgb(134, 134, 134)">CELL: 92-311-1729526</a></div>
+              <div> <a class="tel" href="+1(716)941 7792"style="color: rgb(134, 134, 134)">USA NO +1(716)941 7792</a> </div>
+              <div> <a class="tel" href="(+44)115 970 6256"style="color: rgb(134, 134, 134)">UK NO (+44)115 970 6256</a></div>
+            <div>  <a class="email"href="info@saylaniwelfare.com"style="color: rgb(134, 134, 134)">info@evillastore.com</a><br></div>
+             <div> <a href=""> <i class="fa fa-globe" aria-hidden="true" href="(+0092-213) 4130786-90" ></i>(+0092-213) 4130786-90 </a> </div>   
+            </address>
+            <div class="copyright" ><span id="copyid" style="color: #F7F8FA;" >Copyright © 2020 Eyvilla Clothing</span> </div>
+            
+            </div>
+         
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  duration: 1500,
+})
+  </script>
+        </body>
+        
+        </html>
